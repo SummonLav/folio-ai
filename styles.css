@@ -263,10 +263,12 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto 120px auto;
+    padding: 0 40px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .video-container video {
@@ -539,6 +541,29 @@ body {
     margin: 15px 0 0;
 }
 
+/* Large Desktop Responsive */
+@media (min-width: 1440px) {
+    .video-container {
+        max-width: 80vw;
+        padding: 0 60px;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .video-container {
+        padding: 0 40px;
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        padding: 0 20px;
+        max-width: 95vw;
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 640px) {
     .nav {
@@ -615,5 +640,10 @@ body {
     .email-input {
         width: 200px;
         max-width: 200px;
+    }
+
+    .video-container {
+        padding: 0 20px;
+        margin: 0 auto 60px auto;
     }
 }
