@@ -136,8 +136,7 @@ body {
 .email-input:focus {
     outline: none;
     border-color: #25c28e;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 30px rgba(37, 194, 142, 0.1);
+    box-shadow: 0 0 0 2px rgba(37, 194, 142, 0.2);
 }
 
 .btn-primary {
@@ -185,6 +184,45 @@ body {
     position: relative;
 }
 
+/* .trusted-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trusted-images {
+    display: flex;
+}
+
+.trusted-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -8px;
+    border: 2px solid #131313;
+}
+
+.trusted-image:first-child {
+    margin-left: 0;
+}
+
+.trusted-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.trusted-text p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin: 0;
+    font-weight: 400;
+} */
+
 /* How it Works Section */
 .how-it-works {
     padding: 100px 0;
@@ -210,15 +248,32 @@ body {
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     letter-spacing: 0.01em;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     line-height: 1.6;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 120px auto;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .features-grid {
@@ -436,6 +491,7 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
